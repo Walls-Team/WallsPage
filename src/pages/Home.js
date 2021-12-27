@@ -1,7 +1,6 @@
 import React from "react"
 import Lottie from "react-lottie"
 import Dev from "../images/dev.json"
-import Particles from "react-particles-js"
 
 const defaultOptions = {
   loop: true,
@@ -14,7 +13,7 @@ const defaultOptions = {
 
 export default function Home() {
   return (
-    <div className="content-home">
+    <div className="content-home" id="home-setcion">
       <div>
         <div className="containerTitle">
           {/* <h1 className="title">Welcome</h1>
