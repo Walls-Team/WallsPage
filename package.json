@@ -3,7 +3,7 @@
   "private": true,
   "description": "The walls team page",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "luis paredes luisparedez@gmail.com",
   "dependencies": {
     "gatsby": "^3.11.1",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
