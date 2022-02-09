@@ -8,7 +8,7 @@ const Header = () => (
     <div className="content-line">
       <Link
         activeClass="active"
-        to="home-setcion"
+        to="home-section"
         spy={true}
         smooth={true}
         offset={0}
@@ -28,9 +28,17 @@ const Header = () => (
       >
         <div className="line"></div>
       </Link>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
+      <Link
+        activeClass="active"
+        to="work-section"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        activeClass="active-line"
+      >
+        <div className="line"></div>
+      </Link>
     </div>
   </header>
 )

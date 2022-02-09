@@ -10,10 +10,11 @@
   position: fixed;
   top: 0;
   bottom: 0;
+  left: 3%;
   width: 60px;
   display: flex;
   align-items: center;
 }
-.active-line .line{
+.active-line .line {
   height: 12px;
 }

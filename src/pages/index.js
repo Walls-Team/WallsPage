@@ -57,8 +57,7 @@ const IndexPage = () => {
   }, [])
   return (
     <Layout>
-      <Header></Header>
-      <Seo title="Home" />
+      <Header />
       <Home />
       <Skills />
       <Work />
