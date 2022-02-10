@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="content-home" id="home-section">
       <div className="containerTitle">
-        <h1 className="title">Welcome To User</h1>
+        <h1 className="title">Welcome</h1>
         <div className="Iam">
           <p>We are</p>
           <b>
@@ -29,6 +29,9 @@ export default function Home() {
               Quick, efficient and effective.
               <br />
               Top Rate Upwork
+              <br />
+              <br />
+              Leonel the bear
               <br />
               your best choice
             </div>
