@@ -22,6 +22,10 @@
     "react-scroll": "^1.8.4",
     "tsparticles": "^1.34.0"
   },
+  "engines": {
+    "node": "14.17.4",
+    "npm": "6.14.14"
+  },
   "devDependencies": {
     "prettier": "2.3.2"
   },
