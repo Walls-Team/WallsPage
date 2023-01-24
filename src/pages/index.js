@@ -9,9 +9,10 @@ import Scrolldown from "../images/scroll-down.json"
 import Header from "../components/header"
 import "../styles/index.css"
 import Home from "./Home"
-import Skills from "./Skills"
+import Projects from "./Projects"
 import Work from "./Work"
 import { animateScroll as scroll, Events } from "react-scroll"
+import Navbar from "../components/navbar"
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -57,9 +58,10 @@ const IndexPage = () => {
   }, [])
   return (
     <Layout>
+      <Navbar/>
       <Header />
       <Home />
-      <Skills />
+      <Projects />
       <Work />
     </Layout>
   )

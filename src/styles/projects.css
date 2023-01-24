@@ -1,0 +1,25 @@
+.content-projects {
+  height: 100vh;
+  background: white;
+}
+
+.tec_wrapper{
+  width: 248px;
+  height: 125px;
+  border: 1px solid gray;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+
+.tec_wrapper h1{
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #2D31FA;
+  font-weight: 800;
+  font-size: 50px;
+
+}

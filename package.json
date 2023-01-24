@@ -23,8 +23,8 @@
     "tsparticles": "^1.34.0"
   },
   "engines": {
-    "node": "14.17.4",
-    "npm": "6.14.14"
+    "node": "19.2.0",
+    "npm": "8.19.3"
   },
   "devDependencies": {
     "prettier": "2.3.2"

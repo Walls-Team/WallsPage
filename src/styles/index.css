@@ -1,8 +1,10 @@
 @import "./header.css";
 @import "./home.css";
-@import "./skills.css";
+@import "./projects.css";
 @import "./work.css";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "./navbar.css";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue+Inter+Montserrat&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prompt:ital,wght@0,100;1,400&display=swap"); */
 
 html {
   -ms-text-size-adjust: 100%;
@@ -24,5 +26,6 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-family: "Bebas Neue", cursive;
-  background: linear-gradient(to right, rgb(30, 212, 212), rgb(247, 187, 151));
+  background: linear-gradient(180deg, rgb(0, 4, 249) 0%, rgba(93, 139, 244, 0) 85%);
+
 }
