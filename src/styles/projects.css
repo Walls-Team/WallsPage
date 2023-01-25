@@ -1,6 +1,7 @@
 .content-projects {
-  height: 100vh;
+  height: auto;
   background: white;
+  padding-bottom: 5%;
 }
 
 .projects__section-one{
@@ -9,6 +10,14 @@
   display: flex;
   align-items: center;
 }
+
+.projects__section-two{
+  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
 
 .projects__section_logos{
   display: flex;
@@ -46,6 +55,10 @@
   top:-25px;
 }
 
-
+.project_card{
+  width: 325px !important;
+  height: 329px;
+  background-color: red;
+}
 
 

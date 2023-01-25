@@ -10,7 +10,7 @@ import Header from "../components/header"
 import "../styles/index.css"
 import Home from "./Home"
 import Projects from "./Projects"
-import Work from "./Work"
+import Work from "./WhyUs"
 import { animateScroll as scroll, Events } from "react-scroll"
 import Navbar from "../components/navbar"
 const defaultOptions = {

@@ -1,4 +1,24 @@
 .content-work {
   height: 100vh;
-  background: blue;
+  background: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+}
+
+.wrapper {
+  background-color: blue;
+  width: 100%;
+ 
+}
+
+.whyUs_container {
+  background-color: #FBFCFF;
+ 
+  width: 70%;
+  height: 70vh;
+  border-radius: 34px;
+  box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
 }

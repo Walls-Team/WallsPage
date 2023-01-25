@@ -25,6 +25,24 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-family: "Bebas Neue", cursive;
-  background: linear-gradient(180deg, rgb(0, 4, 249) 0%, rgba(93, 139, 244, 0) 85%);
+  background: linear-gradient(
+    180deg,
+    rgb(0, 4, 249) 0%,
+    rgba(93, 139, 244, 0) 85%
+  );
+}
 
+.web_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 67px;
+  color: #051367;
+  margin: 0 auto;
+}
+
+.web_title span{
+  color: #2D31FA;
+ 
 }
