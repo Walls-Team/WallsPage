@@ -3,23 +3,49 @@
   background: white;
 }
 
+.projects__section-one{
+  padding-left: 90px;
+  padding-top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.projects__section_logos{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
 .tec_wrapper{
   width: 248px;
   height: 125px;
-  border: 1px solid gray;
+  border: 1px solid #B4B4B4;
   border-radius: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'Montserrat';
+ 
+  padding-left: 27px;  
   
 
 }
 
 .tec_wrapper h1{
-  font-family: 'Montserrat';
   font-style: normal;
   color: #2D31FA;
+  top:15px;
   font-weight: 800;
-  font-size: 50px;
-
+  font-size: 64px;
+  position: relative;
 }
+
+.tec_wrapper p{
+  position: relative;
+  top:-25px;
+}
+
+
+
+
