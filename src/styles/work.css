@@ -1,5 +1,5 @@
 .content-work {
-  height: 100vh;
+  height:auto;
   background: white;
   text-align: center;
   display: flex;
@@ -16,9 +16,76 @@
 
 .whyUs_container {
   background-color: #FBFCFF;
- 
-  width: 70%;
-  height: 70vh;
+  width: 80%;
+  height: 835px;
   border-radius: 34px;
   box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
+  z-index: 10;
 }
+
+.container__section_one{
+  display: flex;
+  padding-top: 50px;
+  padding-left: 55px;
+  padding-right: 60px;
+}
+.container__section_two{
+  display: flex;
+  flex-direction: row;
+}
+.container__section_one div p{
+  font-family: 'Monserrat';
+  color: #051367;
+  font-weight: 400;
+  font-size: 22px;
+}
+.container__list{
+  display: flex;
+  gap: 45px;
+}
+
+.container__list li{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+  
+}
+
+.carousel{
+  height: 500px;
+  overflow-x:scroll;
+}
+
+.carousel .change_outer {
+  position: absolute;
+  top: 0;
+  left: 54%;
+  text-align: left;
+  height: auto;
+  overflow: hidden;
+}
+.carousel .change_outer .change_inner {
+  position: relative;
+  animation: rotate 8s ease-in-out infinite;
+}
+.carousel .change_outer .element {
+  display: block;
+}
+
+@keyframes rotate {
+  10%, 15%, 100% {
+             transform: translateY(0);
+   }
+   25%,36% {
+             transform: translateY(-45px);
+   }
+   46%,57% {
+             transform: translateY(-90px);
+   }
+   67%,78% {
+             transform: translateY(-135px);
+   }
+   88%, 99% {
+             transform: translateY(-180px);
+   }
+ }

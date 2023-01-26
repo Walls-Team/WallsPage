@@ -2,7 +2,9 @@
 @import "./home.css";
 @import "./projects.css";
 @import "./work.css";
+@import "./team.css";
 @import "./navbar.css";
+@import "./testimonial.css";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue+Inter+Montserrat&display=swap");
 
 html {

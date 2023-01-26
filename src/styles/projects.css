@@ -14,6 +14,7 @@
 .projects__section-two{
   padding-top: 90px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
  
 }
@@ -62,3 +63,8 @@
 }
 
 
+.alice-carousel{
+ 
+  display: flex !important;
+  flex-direction: column !important;
+}

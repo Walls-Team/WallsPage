@@ -11,8 +11,10 @@ import "../styles/index.css"
 import Home from "./Home"
 import Projects from "./Projects"
 import Work from "./WhyUs"
+import Team from './Team'
 import { animateScroll as scroll, Events } from "react-scroll"
 import Navbar from "../components/navbar"
+import Testimonials from "./Testimonials"
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -63,6 +65,8 @@ const IndexPage = () => {
       <Home />
       <Projects />
       <Work />
+      <Team/>
+      <Testimonials/>
     </Layout>
   )
 }

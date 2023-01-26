@@ -26,3 +26,21 @@
     cursor: pointer;
 }
 
+.navbar{
+    display: none;
+}
+
+@media only screen and (max-width: 967px) {
+    .navbar{
+        display: flex;
+    }
+    
+    .navBar_links{
+        display: none;
+    }
+    .navBar{
+        justify-content: space-between;
+        padding-right: 90px;
+    }
+
+}

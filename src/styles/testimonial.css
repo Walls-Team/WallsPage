@@ -1,0 +1,12 @@
+.card__testimonial{
+  background-color: #FBFCFF;
+  box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
+  width: 409px;
+  height: 298px;
+}
+
+.content-testimonial{
+  height: 100vh;
+  background-color: white;
+
+}

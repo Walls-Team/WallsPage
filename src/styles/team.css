@@ -1,0 +1,79 @@
+.content-team {
+  height: auto;
+  background: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__card {
+  width: 291px;
+  height: 341px;
+  background-color: #fbfcff;
+  box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
+  transition: 0.5s ease-in-out;
+}
+
+.role {
+  color: #ee4d4d;
+  font-family: "Monserrat";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.name {
+  color: #2d31fa;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Monserrat";
+  position: relative;
+  top: -25px;
+}
+
+.team__card:hover {
+  animation: loader 2s;
+  background-color: black;
+}
+
+.team__card:hover > img {
+  display: none;
+}
+
+.team__cardSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 260px;
+  padding-right: 260px;
+
+  justify-content: center;
+  gap: 60px;
+}
+
+.team__card_text{
+  text-align: left;
+  position: relative;
+  top: -20px;
+  padding-left: 14px;
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: y 90deg;
+    /* scale: 0.5; */
+  }
+  /* 50% {
+    rotate: 180deg;
+  } */
+  /* 75% {
+    rotate: x 270deg;
+    border-radius: 50%;
+  } */
+  /* 100% {
+    rotate: 360deg;
+  } */
+}
