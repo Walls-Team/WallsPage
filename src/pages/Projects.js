@@ -59,7 +59,7 @@ export default function Projects() {
           disableDotsControls
           disableButtonsControls
           items={ProjectsData.map(item => {
-            return <ProjectCard name={item.title} />
+            return <ProjectCard name={item.title} image={item.url} />
           })}
         />
       </section>
@@ -74,7 +74,7 @@ export default function Projects() {
           autoPlayDirection='rtl'
           disableButtonsControls
           items={ProjectsData.map(item => {
-            return <ProjectCard name={item.title} />
+            return <ProjectCard name={item.title} image={item.url} />
           })}
         />
       </section>

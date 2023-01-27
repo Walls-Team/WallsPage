@@ -32,34 +32,34 @@ let isDown = 0
 let timerScroll = null
 const IndexPage = () => {
   useEffect(() => {
-    Events.scrollEvent.register("begin", function (to, element) {
-      moving = true
-    })
-    Events.scrollEvent.register("end", function (to, element) {
-      setTimeout(() => (moving = false), 60)
-    })
-    const scrollTo = () => {
-      if (timerScroll) clearTimeout(timerScroll)
-      timerScroll = setTimeout(() => {
-        const nowIsDown = isDown < window.scrollY
-        isDown = window.scrollY
-        if (!moving) {
-          const direction = nowIsDown ? 1 : -1
-          console.log(isDown, isDown % window.innerHeight, window.innerHeight)
-          const scrolll = nowIsDown
-            ? window.innerHeight - (isDown % window.innerHeight)
-            : window.innerHeight -
-              (window.innerHeight - (isDown % window.innerHeight))
-          scroll.scrollMore(scrolll * direction)
-        }
-      }, 50)
-    }
-    window.addEventListener("scroll", scrollTo)
-    return () => {
-      window.removeEventListener("scroll", scrollTo)
-      Events.scrollEvent.remove("begin")
-      Events.scrollEvent.remove("end")
-    }
+    // Events.scrollEvent.register("begin", function (to, element) {
+    //   moving = true
+    // })
+    // Events.scrollEvent.register("end", function (to, element) {
+    //   setTimeout(() => (moving = false), 60)
+    // })
+    // const scrollTo = () => {
+    //   if (timerScroll) clearTimeout(timerScroll)
+    //   timerScroll = setTimeout(() => {
+    //     const nowIsDown = isDown < window.scrollY
+    //     isDown = window.scrollY
+    //     if (!moving) {
+    //       const direction = nowIsDown ? 1 : -1
+    //       console.log(isDown, isDown % window.innerHeight, window.innerHeight)
+    //       const scrolll = nowIsDown
+    //         ? window.innerHeight - (isDown % window.innerHeight)
+    //         : window.innerHeight -
+    //           (window.innerHeight - (isDown % window.innerHeight))
+    //       scroll.scrollMore(scrolll * direction)
+    //     }
+    //   }, 50)
+    // }
+    // window.addEventListener("scroll", scrollTo)
+    // return () => {
+    //   window.removeEventListener("scroll", scrollTo)
+    //   Events.scrollEvent.remove("begin")
+    //   Events.scrollEvent.remove("end")
+    // }
   }, [])
   return (
     <Layout>

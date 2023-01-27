@@ -8,7 +8,6 @@ export default function Work() {
     <div className="content-work" id="work-section">
       
         <Title titleA={'¿Por qué'} titleB={' nosotros?'}/>
-        <Stripes/>
 
         <WhyUsContainer/>
      

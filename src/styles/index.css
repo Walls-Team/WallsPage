@@ -45,8 +45,36 @@ body {
   line-height: 67px;
   color: #051367;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .web_title span{
   color: #2D31FA;
 }
+
+.button{
+  background-color: #051367;
+  width: 237px;
+  height: 59px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
