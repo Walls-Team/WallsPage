@@ -1,0 +1,18 @@
+.content-ubication{
+    background-color: white;
+}
+
+.content-map{
+    display: flex;
+    flex: row;
+}
+
+.input{
+    border: 1px solid #BFBFBF;
+    border-radius: 9px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}

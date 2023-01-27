@@ -96,6 +96,44 @@ export const team_members=[
     }
 ]
 
+export const testimonial=[
+    {
+        id:1,
+        img:user1,
+        comment:'Creemos que nuestra industria está cegada por los números. Mientras que las decisiones de compra se basan en la emoción.',
+        client:'Scoby Social'
+    },
+    {
+        id:1,
+        img:user1,
+        comment:'Creemos que nuestra industria está cegada por los números. Mientras que las decisiones de compra se basan en la emoción.',
+        client:'Scoby Social'
+    },
+    {
+        id:1,
+        img:user1,
+        comment:'Creemos que nuestra industria está cegada por los números. Mientras que las decisiones de compra se basan en la emoción.',
+        client:'Scoby Social'
+    },
+    {
+        id:1,
+        img:user1,
+        comment:'Creemos que nuestra industria está cegada por los números. Mientras que las decisiones de compra se basan en la emoción.',
+        client:'Scoby Social'
+    },
+    {
+        id:1,
+        img:user1,
+        comment:'Creemos que nuestra industria está cegada por los números. Mientras que las decisiones de compra se basan en la emoción.',
+        client:'Scoby Social'
+    },
+    {
+        id:1,
+        img:user1,
+        comment:'Creemos que nuestra industria está cegada por los números. Mientras que las decisiones de compra se basan en la emoción.',
+        client:'Scoby Social'
+    }
+]
 
 
 

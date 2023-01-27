@@ -15,6 +15,9 @@ import Team from './Team'
 import { animateScroll as scroll, Events } from "react-scroll"
 import Navbar from "../components/navbar"
 import Testimonials from "./Testimonials"
+import TextSection from "./TextSection"
+import Ubication from "./Ubication"
+
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -67,6 +70,8 @@ const IndexPage = () => {
       <Work />
       <Team/>
       <Testimonials/>
+      <TextSection/>
+      <Ubication/>
     </Layout>
   )
 }

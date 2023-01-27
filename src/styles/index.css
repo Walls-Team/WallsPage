@@ -5,6 +5,9 @@
 @import "./team.css";
 @import "./navbar.css";
 @import "./testimonial.css";
+@import "./textSection.css";
+@import "./ubication.css";
+
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue+Inter+Montserrat&display=swap");
 
 html {
@@ -46,5 +49,4 @@ body {
 
 .web_title span{
   color: #2D31FA;
- 
 }

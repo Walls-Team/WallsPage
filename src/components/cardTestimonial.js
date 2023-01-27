@@ -1,15 +1,21 @@
 import React from 'react';
+import { SingnoDown, SingnoUp } from '../assets/iconsSvg';
 
 
-const CardTestimonial = () => {
+const CardTestimonial = ({img,description,client,project}) => {
     return ( 
         <article className='card__testimonial'>
-            <div>
-                <img/>
+            <div className='card__testimonial-img'>
+                <img
+                 className='testimonial__avatar'
+                 src={img}
+                />
             </div>
-            <div>
-                <p>Walls Team esta conformada por pros ❤️ que adoran su trabajo</p>
+            <SingnoDown/>
+            <div className='comment__wrapper'>
+                <p className='comment'>{description}</p>
             </div>
+            <SingnoUp/>
         </article>
      );
 }
