@@ -7,6 +7,8 @@
   justify-content: center;
   align-items: center;
   padding-top: 5%;
+  width: 100%;
+
 }
 
 .team__card {
@@ -15,6 +17,7 @@
   background-color: #fbfcff;
   box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
   transition: 0.5s ease-in-out;
+  z-index: 10;
 }
 
 .role {
@@ -47,7 +50,7 @@
   flex-wrap: wrap;
   padding-left: 260px;
   padding-right: 260px;
-
+  margin-bottom: 30px;
   justify-content: center;
   gap: 60px;
 }
@@ -77,4 +80,114 @@
   /* 100% {
     rotate: 360deg;
   } */
+}
+
+
+.content-member{
+  background-color: white;
+  height: 100%;
+}
+
+.member__header{
+  background: linear-gradient(180deg, #BBC9FF 0%, rgba(234, 238, 255, 0) 100%);
+  
+  padding-left: 72px;
+  padding-top: 70px;
+}
+
+.member__section{
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+}
+
+.member__text h1{
+  color: #2d31fa;
+  font-family: 'Monserrat';
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.member__text{
+  display: flex;
+  align-items: center;
+}
+
+.member__text p{
+  color: #050739;
+  font-family: 'Monserrat';
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  top: -20px;
+}
+
+.stripe{
+  background-color: #FF4300;
+  width: 10px;
+  height: 111px;
+}
+
+.about__member{
+ display: flex;
+ justify-content: center;
+ gap: 5%;
+ padding-top: 10%;
+}
+
+
+.member__bio{
+  width: 35%;
+
+  font-family: 'Monserrat';
+  color: #050739;
+}
+
+.skills__wrapper{
+  background-color: white;
+  width: 523px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
+  padding-left: 37px;
+  font-family: 'Monserrat';
+  font-style: 'normal';
+}
+
+.skills{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.wrap__title_logo{
+  display: flex;
+  flex-direction: flex-start;
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .about__member{
+    flex-direction: column;
+   
+  }
+
+  .member__bio{
+    width: 100%;
+  }
+
+  .skills__wrapper{
+    width: 100%;
+  }
+
+  .projects__section{
+    text-align: center;
+  }
+
+  .projects__section_projects{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
 }

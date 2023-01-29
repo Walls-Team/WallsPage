@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect,useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -17,6 +17,7 @@ import Navbar from "../components/navbar"
 import Testimonials from "./Testimonials"
 import TextSection from "./TextSection"
 import Ubication from "./Ubication"
+import SideBar from "../components/sideBar";
 
 const defaultOptions = {
   loop: true,
@@ -30,40 +31,46 @@ const defaultOptions = {
 let moving = false
 let isDown = 0
 let timerScroll = null
+
 const IndexPage = () => {
+  const [show, setShow] = useState(false);
+
+
+
   useEffect(() => {
-    // Events.scrollEvent.register("begin", function (to, element) {
-    //   moving = true
-    // })
-    // Events.scrollEvent.register("end", function (to, element) {
-    //   setTimeout(() => (moving = false), 60)
-    // })
-    // const scrollTo = () => {
-    //   if (timerScroll) clearTimeout(timerScroll)
-    //   timerScroll = setTimeout(() => {
-    //     const nowIsDown = isDown < window.scrollY
-    //     isDown = window.scrollY
-    //     if (!moving) {
-    //       const direction = nowIsDown ? 1 : -1
-    //       console.log(isDown, isDown % window.innerHeight, window.innerHeight)
-    //       const scrolll = nowIsDown
-    //         ? window.innerHeight - (isDown % window.innerHeight)
-    //         : window.innerHeight -
-    //           (window.innerHeight - (isDown % window.innerHeight))
-    //       scroll.scrollMore(scrolll * direction)
-    //     }
-    //   }, 50)
-    // }
-    // window.addEventListener("scroll", scrollTo)
-    // return () => {
-    //   window.removeEventListener("scroll", scrollTo)
-    //   Events.scrollEvent.remove("begin")
-    //   Events.scrollEvent.remove("end")
-    // }
+    Events.scrollEvent.register("begin", function (to, element) {
+      moving = true
+    })
+    Events.scrollEvent.register("end", function (to, element) {
+      setTimeout(() => (moving = false), 60)
+    })
+    const scrollTo = () => {
+      if (timerScroll) clearTimeout(timerScroll)
+      timerScroll = setTimeout(() => {
+        const nowIsDown = isDown < window.scrollY
+        isDown = window.scrollY
+        if (!moving) {
+          const direction = nowIsDown ? 1 : -1
+          console.log(isDown, isDown % window.innerHeight, window.innerHeight)
+          const scrolll = nowIsDown
+            ? window.innerHeight - (isDown % window.innerHeight)
+            : window.innerHeight -
+              (window.innerHeight - (isDown % window.innerHeight))
+          scroll.scrollMore(scrolll * direction)
+        }
+      }, 50)
+    }
+    window.addEventListener("scroll", scrollTo)
+    return () => {
+      window.removeEventListener("scroll", scrollTo)
+      Events.scrollEvent.remove("begin")
+      Events.scrollEvent.remove("end")
+    }
   }, [])
   return (
     <Layout>
-      <Navbar/>
+      <SideBar show={show} setShow={setShow}/>
+      <Navbar setShow={setShow}/>
       <Header />
       <Home />
       <Projects />

@@ -1,9 +1,11 @@
+import { GitHub, Instagram, Linkedin, TikTok, Twitter, Web } from './assets/iconsSvg'
 import user1 from './assets/user1.png'
 import user2 from './assets/user2.png'
 import user3 from './assets/user3.png'
 import user4 from './assets/user4.png'
 import user5 from './assets/user5.png'
 import user6 from './assets/user6.png'
+import React from 'react';
 
 export const ProjectsData=[
     {
@@ -57,42 +59,87 @@ export const ProjectsData=[
     }
 ]
 
+export const social=[
+    {
+        id:1,
+        name:'Instagram',
+        logo:<Instagram/>
+    },
+    {
+        id:2,
+        name:'Linkedin',
+        logo:<Linkedin/>
+    },
+    {
+        id:3,
+        name:'Twitter',
+        logo:<Twitter/>
+    },
+    {
+        id:4,
+        name:'TikTok',
+        logo:<TikTok/>
+    },
+    {
+        id:5,
+        name:'Github',
+        logo:<GitHub/>
+    },
+    {
+        id:6,
+        name:'Web',
+        logo:<Web/>
+    }
+]
+
 export const team_members=[
     {
         id:1,
         name:'Wade Warren',
         role:'CEO',
-        img:user1
+        img:user1,
+        projects:[3,4,5],
+        social:[{}]
     },
     {
         id:2,
         name:'Wade Warren',
         role:'Developer',
-        img:user2
+        img:user2,
+        projects:[1,4,9,3]
+
     },
     {
         id:3,
         name:'Wade Warren',
         role:'Designer',
-        img:user3
+        img:user3,
+        projects:[1,4,9,3]
+
     },
     {
         id:4,
         name:'Wade Warren',
         role:'Mobile Dev',
-        img:user1
+        img:user1,
+        projects:[1,7,9,5]
+
     },
     {
         id:5,
         name:'Wade Warren',
         role:'Cummunity Manager',
-        img:user5
+        img:user5,
+        projects:[1,4,9,3]
+
     },
     {
         id:6,
         name:'Wade Warren',
         role:'Developer',
-        img:user6
+        img:user6,
+        projects:[1,7,9,5]
+
     }
 ]
 

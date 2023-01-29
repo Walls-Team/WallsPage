@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-
+import Popup from "reactjs-popup"
+import "reactjs-popup/dist/index.css"
 const Article = styled.article`
   width: 325px !important;
   height: 329px;
@@ -11,14 +12,24 @@ const Article = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
- 
 `
 
 const ProjectCard = ({ name, image }) => {
+  const [visible, setVisible] = useState(false)
   return (
-    <Article img={image} color={"blue"}>
-      <h3>{name}</h3>
-    </Article>
+    <>
+      <Popup
+        modal
+        trigger={
+          <Article img={image} color={"blue"} onClick={() => setVisible(true)}>
+            <h3>{name}</h3>
+          </Article>
+        }
+        position="right center"
+      >
+        <div>{name}</div>
+      </Popup>
+    </>
   )
 }
 

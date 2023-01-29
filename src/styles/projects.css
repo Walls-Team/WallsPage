@@ -2,69 +2,80 @@
   height: auto;
   background: white;
   padding-bottom: 5%;
+  width: 100%;
+
 }
 
-.projects__section-one{
+.projects__section-one {
   padding-left: 90px;
   padding-top: 90px;
   display: flex;
   align-items: center;
 }
 
-.projects__section-two{
+.projects__section-two {
   padding-top: 90px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
- 
 }
 
-
-.projects__section_logos{
+.projects__section_logos {
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin-left: 10px;
 }
 
-.tec_wrapper{
+.tec_wrapper {
   width: 248px;
   height: 125px;
-  border: 1px solid #B4B4B4;
+  border: 1px solid #b4b4b4;
   border-radius: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Montserrat';
- 
-  padding-left: 27px;  
-  
+  font-family: "Montserrat";
 
+  padding-left: 27px;
 }
 
-.tec_wrapper h1{
+.tec_wrapper h1 {
   font-style: normal;
-  color: #2D31FA;
-  top:15px;
+  color: #2d31fa;
+  top: 15px;
   font-weight: 800;
   font-size: 64px;
   position: relative;
 }
 
-.tec_wrapper p{
+.tec_wrapper p {
   position: relative;
-  top:-25px;
+  top: -25px;
 }
 
-.project_card{
+.project_card {
   width: 325px !important;
   height: 329px;
-  background-color: red;
 }
 
-
-.alice-carousel{
- 
+.alice-carousel {
   display: flex !important;
   flex-direction: column !important;
+}
+
+.projects__section_projects {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.projects__section{
+  margin-bottom: 5%;
+}
+
+.projects__section h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
 }
