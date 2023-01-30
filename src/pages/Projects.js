@@ -9,6 +9,9 @@ import {
   Angular,
   Photoshop,
   Wordpress,
+  Css3,
+  Figma,
+  Untitled,
 } from "../assets/logosTec"
 import ProjectCard from "../components/projectCard"
 import { ProjectsData } from "../mockData"
@@ -31,22 +34,47 @@ export default function Projects() {
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
-    1024: { items: 4 },
-};
+    1024: { items: 3 },
+  }
   return (
     <div className="content-projects" id="skills-section">
       <section className="projects__section-one">
         <TecnologiesWrapper />
         <ArrowLeft />
         <article className="projects__section_logos">
-          <Python />
-          <Django />
-          <ReactLogo />
-          <Vuejs />
-          <Angular />
-          <Photoshop />
-          <Wordpress />
-          <Java />
+          <marquee>
+            <Python />
+           
+            <Django />
+            <ReactLogo />
+            <Vuejs />
+            <Angular />
+            <Photoshop />
+            <Wordpress />
+            <Java />
+            <Css3 />
+            <Figma />
+            <Untitled />
+          </marquee>
+          {/* <AliceCarousel
+            autoPlay
+            autoPlayInterval={1000}
+            infinite
+            responsive={responsive}
+            mouseTracking
+            disableDotsControls
+            disableButtonsControls
+            items={[
+              <Python />,
+              <Django />,
+              <ReactLogo />,
+              <Vuejs />,
+              <Angular />,
+              <Photoshop />,
+              <Wordpress />,
+              <Java />,
+            ]} */}
+         
         </article>
       </section>
       <section className="projects__section-two">
@@ -71,7 +99,7 @@ export default function Projects() {
           responsive={responsive}
           mouseTracking
           disableDotsControls
-          autoPlayDirection='rtl'
+          autoPlayDirection="rtl"
           disableButtonsControls
           items={ProjectsData.map(item => {
             return <ProjectCard name={item.title} image={item.url} />

@@ -1,5 +1,6 @@
 import React from "react"
 import { IconWall, Logo, Stripes, StripesTwo } from "../assets/iconsSvg"
+import BackButton from "../components/backButton"
 import Card from "../components/cardTeam"
 import Title from "../components/title"
 import { team_members } from "../mockData"
@@ -9,7 +10,7 @@ import Ubication from "./Ubication"
 const AllTeam = () => {
   return (
     <div className="content-allteam">
-
+      <BackButton/>
       <div className="wrap__title">
         <div className="wrap__title_logo">
           <Logo/>

@@ -8,7 +8,7 @@ const Header = () => (
   
     <header className="header">
       <div className="content-line">
-        <Link
+        {/* <Link
           activeClass="active"
           to="home-section"
           spy={true}
@@ -73,7 +73,7 @@ const Header = () => (
           activeClass="active-line"
         >
           <div className="line"></div>
-        </Link>
+        </Link> */}
       </div>
     </header>
   </>

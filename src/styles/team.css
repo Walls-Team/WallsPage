@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .content-team {
   height: 100vh;
   background: white;
@@ -23,8 +25,8 @@
 
 .role {
   color: #ee4d4d;
-  font-family: "Monserrat";
-  font-weight: 700;
+  font-family: "Montserrat";
+  font-weight: 800;
   font-size: 20px;
 }
 
@@ -32,7 +34,7 @@
   color: #2d31fa;
   font-weight: 700;
   font-size: 16px;
-  font-family: "Monserrat";
+  font-family: "Montserrat";
   position: relative;
   top: -25px;
 }
@@ -53,6 +55,7 @@
   padding-right: 260px;
   justify-content: center;
   margin-top: -30px;
+  margin-bottom: 60px;
   gap: 5px;
 }
 
@@ -110,7 +113,7 @@
 
 .member__text h1{
   color: #2d31fa;
-  font-family: 'Monserrat';
+  font-family: 'Montserrat';
   font-size: 48px;
   font-weight: 800;
 }
@@ -122,7 +125,7 @@
 
 .member__text p{
   color: #050739;
-  font-family: 'Monserrat';
+  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 32px;
   position: relative;
@@ -157,7 +160,7 @@
   border-radius: 20px;
   box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
   padding-left: 37px;
-  font-family: 'Monserrat';
+  font-family: 'Montserrat';
   font-style: 'normal';
 }
 
@@ -173,12 +176,12 @@
 }
 
 .social__media h3{
-  font-family: 'Monserrat';
+  font-family: 'Montserrat';
   font-family: '700';
   font-size: 32px;
 }
 .projects__section h3{
-  font-family: 'Monserrat';
+  font-family: 'Montserrat';
   font-family: '700';
   font-size: 32px;
 }
@@ -188,7 +191,7 @@
 }
 
 .social__media ul{
-  font-family: 'Monserrat';
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 18px;
   color: #6A6A6A;
@@ -236,6 +239,11 @@
   .team__cardSection{
   
     grid-template-columns:  auto auto;
+    overflow: scroll;
+  }
+
+  .content-member section{
+    padding: 0;
   }
 
 

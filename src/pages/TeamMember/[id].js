@@ -4,7 +4,6 @@ import {
   Angular,
   Css3,
   GitHub,
-  IconWall,
   Instagram,
   Linkedin,
   Logo,
@@ -12,14 +11,14 @@ import {
   TikTok,
   Twitter,
   Web,
-  Wordpress,
 } from "../../assets/iconsSvg"
+import BackButton from "../../components/backButton"
 import ProjectCard from "../../components/projectCard"
 import { ProjectsData, team_members } from "../../mockData"
 import Ubication from "../Ubication"
 
 const TeamMember = props => {
- 
+  
   const [member, setMember] = useState({})
   const [projects, setProjects] = useState([])
 
@@ -49,7 +48,9 @@ const TeamMember = props => {
 
   return (
     <section className="content-member">
+
       <header className="member__header">
+      <BackButton/>
         <Logo />
 
         <div className="member__section">

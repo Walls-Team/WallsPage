@@ -10,7 +10,8 @@
 @import "./sidebar.css";
 @import "./allteam.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue+Inter+Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue+Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 
 html {
   -ms-text-size-adjust: 100%;
@@ -49,6 +50,7 @@ body {
   color: #051367;
   margin: 0 auto;
   margin-bottom: 40px; 
+  z-index: 20;
 }
 
 .web_title span{
@@ -63,22 +65,31 @@ body {
   border: none;
   color: white;
   font-family: 'Montserrat';
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .Link{
   text-decoration: none;
 }
 
+.backBtn{
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
 
 
 @media only screen and (max-width: 1164px) {
 
-  .content-projects,.content-team ,.content-testimonial,.content-text,.content-ubication,.content-work{
+  /* .content-projects,.content-team ,.content-testimonial,.content-text,.content-ubication,.content-work{
     
     height: auto;
 
-  }
+  } */
 
 }
 

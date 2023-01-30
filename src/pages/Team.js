@@ -25,7 +25,7 @@ const Team = () => {
         })}
       </div>
       <Link to="/AllTeam">
-        <Button text="Conocenos" />
+        <Button text="Conocenos" logo={true}/>
       </Link>
     </section>
   )

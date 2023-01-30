@@ -4,7 +4,7 @@ import Popup from "reactjs-popup"
 import "reactjs-popup/dist/index.css"
 const Article = styled.article`
   width: 325px !important;
-  height: 300px;
+  height: 250px;
   background-image: url(${props => props.img});
   background-size: auto;
   color: white;

@@ -79,15 +79,15 @@ const WhyUsContainer = () => {
               {({ inView, ref, entry }) => (
                 <div ref={ref}>
                   {setOne(inView)}
-                  <img src={rocket} />
+                  <img src={rocket}className='img'/>
                 </div>
               )}
             </InView>
             <InView>
               {({ inView, ref, entry }) => (
-                <div ref={ref} style={{height:'90%'}}>
+                <div ref={ref} >
                   {setTwo(inView)}
-                  <img src={worktogether} />
+                  <img src={worktogether} className='img'/>
                 </div>
               )}
             </InView>
@@ -97,7 +97,7 @@ const WhyUsContainer = () => {
                 <div ref={ref}>
                   {setThree(inView)}
 
-                  <img src={thinking} />
+                  <img src={thinking}  className='img'/>
                 </div>
               )}
             </InView>
