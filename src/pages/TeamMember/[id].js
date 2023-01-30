@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react"
+import AliceCarousel from "react-alice-carousel"
 import {
   Angular,
   Css3,
+  GitHub,
   IconWall,
+  Instagram,
+  Linkedin,
   Logo,
   Nodes,
+  TikTok,
+  Twitter,
+  Web,
   Wordpress,
 } from "../../assets/iconsSvg"
 import ProjectCard from "../../components/projectCard"
@@ -12,9 +19,14 @@ import { ProjectsData, team_members } from "../../mockData"
 import Ubication from "../Ubication"
 
 const TeamMember = props => {
-  console.log(props.id)
+ 
   const [member, setMember] = useState({})
   const [projects, setProjects] = useState([])
+
+  const responsive = {
+    0: { items: 1 },
+    1234: { items: 2 },
+    1024: { items: 3 }}
 
   useEffect(() => {
     let data = team_members.filter(item => item.id === parseInt(props.id))
@@ -109,17 +121,35 @@ const TeamMember = props => {
       </section>
       <section className="projects__section">
         <h3>Trabajos</h3>
-        <div className="projects__section_projects">
-          {ProjectsData.slice(0, 3).map(item => {
+       
+        <AliceCarousel
+          autoPlay
+          autoPlayInterval={1000}
+          infinite
+          responsive={responsive}
+          mouseTracking
+          disableDotsControls
+          disableButtonsControls
+          items={ProjectsData.map(item => {
             return <ProjectCard name={item.title} image={item.url} />
           })}
-        </div>
+        />
+      
       </section>
-      <section className="social_media">
+      <section className="social__media">
         <h3>Social Media</h3>
+        <div>
         <ul>
-          <li></li>
+          <li><Instagram/> <span>@devmorat</span></li>
+          <li><Linkedin/> <span>http://www.devmorat.com</span></li>
+          <li><Twitter/> <span>@dev.jmo</span></li>
         </ul>
+        <ul>
+          <li><TikTok/> <span>@tikmor</span></li>
+          <li><GitHub/> <span>@devdevmorat.dev</span></li>
+          <li><Web/> <span>www.devmoratdev.com</span></li>
+        </ul>
+        </div>
       </section>
       <Ubication />
     </section>

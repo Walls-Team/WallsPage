@@ -7,7 +7,7 @@ const Header = () => (
   <>
   
     <header className="header">
-      {/* <div className="content-line">
+      <div className="content-line">
         <Link
           activeClass="active"
           to="home-section"
@@ -41,7 +41,40 @@ const Header = () => (
         >
           <div className="line"></div>
         </Link>
-      </div> */}
+        <Link
+          activeClass="active"
+          to="team-section"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          activeClass="active-line"
+        >
+          <div className="line"></div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="text-section"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          activeClass="active-line"
+        >
+          <div className="line"></div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="location-section"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          activeClass="active-line"
+        >
+          <div className="line"></div>
+        </Link>
+      </div>
     </header>
   </>
 )

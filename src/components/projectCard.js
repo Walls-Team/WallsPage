@@ -4,7 +4,7 @@ import Popup from "reactjs-popup"
 import "reactjs-popup/dist/index.css"
 const Article = styled.article`
   width: 325px !important;
-  height: 329px;
+  height: 300px;
   background-image: url(${props => props.img});
   background-size: auto;
   color: white;
@@ -12,6 +12,9 @@ const Article = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  z-index: 10;
+  opacity: 0.5;
 `
 
 const ProjectCard = ({ name, image }) => {

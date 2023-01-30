@@ -1,12 +1,12 @@
 .content-team {
-  height: auto;
+  height: 100vh;
   background: white;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
+  /* padding-top: 5%; */
   width: 100%;
 
 }
@@ -18,6 +18,7 @@
   box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
   transition: 0.5s ease-in-out;
   z-index: 10;
+  
 }
 
 .role {
@@ -46,13 +47,13 @@
 }
 
 .team__cardSection {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
   padding-left: 260px;
   padding-right: 260px;
-  margin-bottom: 30px;
   justify-content: center;
-  gap: 60px;
+  margin-top: -30px;
+  gap: 5px;
 }
 
 .team__card_text{
@@ -86,11 +87,17 @@
 .content-member{
   background-color: white;
   height: 100%;
+
+}
+
+.content-member section{
+  padding-left: 248px;
+  padding-right: 107px;
 }
 
 .member__header{
   background: linear-gradient(180deg, #BBC9FF 0%, rgba(234, 238, 255, 0) 100%);
-  
+  width: 100%;
   padding-left: 72px;
   padding-top: 70px;
 }
@@ -165,7 +172,43 @@
   flex-direction: flex-start;
 }
 
-@media only screen and (max-width: 900px) {
+.social__media h3{
+  font-family: 'Monserrat';
+  font-family: '700';
+  font-size: 32px;
+}
+.projects__section h3{
+  font-family: 'Monserrat';
+  font-family: '700';
+  font-size: 32px;
+}
+
+.social__media div{
+  display: flex;
+}
+
+.social__media ul{
+  font-family: 'Monserrat';
+  font-weight: 500;
+  font-size: 18px;
+  color: #6A6A6A;
+  list-style: none;
+  
+  
+}
+
+.social__media ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+ 
+}
+
+.social__media ul li span{
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 902px) {
   
   .about__member{
     flex-direction: column;
@@ -185,9 +228,31 @@
   }
 
   .projects__section_projects{
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
 
   }
 
+  .team__cardSection{
+  
+    grid-template-columns:  auto auto;
+  }
+
+
+ 
+
+}
+
+@media only screen and (max-width: 902px) {
+  .team__cardSection{
+    grid-template-columns:  auto;
+
+  }
+
+}
+
+@media only screen and (max-width: 779px) {
+  .social__media div{
+    flex-direction: column;
+  }  
 }

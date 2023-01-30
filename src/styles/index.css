@@ -48,8 +48,7 @@ body {
   line-height: 67px;
   color: #051367;
   margin: 0 auto;
-  margin-bottom: 40px;
- 
+  margin-bottom: 40px; 
 }
 
 .web_title span{
@@ -71,6 +70,17 @@ body {
   text-decoration: none;
 }
 
+
+
+@media only screen and (max-width: 1164px) {
+
+  .content-projects,.content-team ,.content-testimonial,.content-text,.content-ubication,.content-work{
+    
+    height: auto;
+
+  }
+
+}
 
 
 

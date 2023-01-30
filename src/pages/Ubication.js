@@ -4,7 +4,7 @@ import Button from '../components/button';
 
 const Ubication = () => {
     return ( 
-        <section className='content-map'>
+        <section className='content-map' id='location-section'>
             <article className='map__image'>
                 <img
                     src={map}

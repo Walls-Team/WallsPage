@@ -7,7 +7,9 @@ export default function Work() {
   return (
     <div className="content-work" id="work-section">
       
+        <div className="title__wrapper">
         <Title titleA={'¿Por qué'} titleB={' nosotros?'}/>
+        </div>
         <Stripes/>
         <WhyUsContainer/>
      

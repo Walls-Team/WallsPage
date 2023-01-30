@@ -2,7 +2,7 @@ import React from "react"
 
 const TextSection = () => {
   return (
-    <div className="content-text">
+    <div className="content-text" id='text-section'>
       <p >
         We believe our industry is blinded by numbers. While buying decisions
         are based on emotion.We are Walls Team

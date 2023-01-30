@@ -8,11 +8,11 @@ import { Link } from "gatsby"
 
 const Team = () => {
   return (
-    <section className="content-team">
+    <section className="content-team" id="team-section">
       <Title titleA={"Conece al"} titleB={" equipo"} />
       <CircleGreen />
       <div className="team__cardSection">
-        {team_members.map(member => {
+        {team_members.slice(0,3).map(member => {
           return (
             <Card
               key={member.id}
@@ -25,7 +25,7 @@ const Team = () => {
         })}
       </div>
       <Link to="/AllTeam">
-        <Button text="Contactanos" />
+        <Button text="Conocenos" />
       </Link>
     </section>
   )
