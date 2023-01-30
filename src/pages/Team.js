@@ -12,20 +12,22 @@ const Team = () => {
       <Title titleA={"Conece al"} titleB={" equipo"} />
       <CircleGreen />
       <div className="team__cardSection">
-        {team_members.slice(0,3).map(member => {
+        {team_members.slice(0, 3).map(member => {
           return (
-            <Card
-              key={member.id}
-              id={member.id}
-              name={member.name}
-              img={member.img}
-              role={member.role}
-            />
+            <div className="scene">
+              <Card
+                key={member.id}
+                id={member.id}
+                name={member.name}
+                img={member.img}
+                role={member.role}
+              />
+            </div>
           )
         })}
       </div>
       <Link to="/AllTeam">
-        <Button text="Conocenos" logo={true}/>
+        <Button text="Conocenos" logo={true} />
       </Link>
     </section>
   )

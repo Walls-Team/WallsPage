@@ -3,14 +3,20 @@ import { Link } from "gatsby"
 
 const Card = ({ img, name, role, id }) => {
   return (
-    <Link className="team__card Link" to={`/TeamMember/${id}`}>
-      <img src={img} />
+    <div className="card Link" to={`/TeamMember/${id}`}>
+      <div className="card__face card__face--front">
+        <img src={img} />
 
-      <div className="team__card_text">
-        <p className="role">{role}</p>
-        <p className="name">{name}</p>
+        <div className="team__card_text">
+          <p className="role">{role}</p>
+          <p className="name">{name}</p>
+        </div>
       </div>
-    </Link>
+
+      <div className="card__face card__face--back">
+
+      </div>
+    </div>
   )
 }
 
