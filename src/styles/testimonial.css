@@ -13,9 +13,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
   width: 100%;
-
 }
 
 .card__testimonial-img {
@@ -28,30 +26,31 @@
   width: 95px;
   height: 95px;
   border-radius: 100%;
-
 }
-
-.card__grid{
+ .card__grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 38px;
 }
 
-
-
-.comment{
+.comment {
   z-index: 10px;
-  font-family: 'Monserrat';
+  font-family: "Monserrat";
   color: #051367;
 }
-.comment__wrapper{
+.comment__wrapper {
   width: 268px;
   justify-self: center;
   text-align: center;
   position: relative;
-  top:-100px;
+  top: -100px;
   left: 10px;
+}
 
+@media only screen and (max-width: 1125px) {
+  .content-testimonial {
+    overflow: scroll;
 
+  }  
 }
