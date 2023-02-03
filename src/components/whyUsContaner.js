@@ -28,7 +28,7 @@ const WhyUsContainer = () => {
     <article className="whyUs_container">
       <div className="container__section_one">
         <div>
-          <p className="">
+          <p className="container__description">
             Somos una agencia multidisciplinaria conformada por los mejores
             profesionales de Venezuela, creamos software de clase mundial,
             trabajamos con diversas tecnologías.
@@ -37,29 +37,29 @@ const WhyUsContainer = () => {
         <div className="container__list">
           <ul>
             <li>
-              <Multidisciplinaria /> Multidisciplinario
+              <Multidisciplinaria /> <span>Multidisciplinario</span>
             </li>
             <li>
               <Software />
-              Software
+              <span> Software</span>
             </li>
             <li>
               <Decisiones />
-              Decisiones
+              <span> Decisiones</span>
             </li>
           </ul>
           <ul>
             <li>
               <Comprometida />
-              Comprometida
+              <span> Comprometida</span>
             </li>
             <li>
               <Profesional />
-              Profesionales
+              <span> Profesionales</span>
             </li>
             <li>
               <Creativo />
-              Creativos
+              <span> Creativos</span>
             </li>
           </ul>
         </div>
@@ -79,15 +79,15 @@ const WhyUsContainer = () => {
               {({ inView, ref, entry }) => (
                 <div ref={ref}>
                   {setOne(inView)}
-                  <img src={rocket}className='img'/>
+                  <img src={rocket} className="img" />
                 </div>
               )}
             </InView>
             <InView>
               {({ inView, ref, entry }) => (
-                <div ref={ref} >
+                <div ref={ref}>
                   {setTwo(inView)}
-                  <img src={worktogether} className='img'/>
+                  <img src={worktogether} className="img" />
                 </div>
               )}
             </InView>
@@ -97,7 +97,7 @@ const WhyUsContainer = () => {
                 <div ref={ref}>
                   {setThree(inView)}
 
-                  <img src={thinking}  className='img'/>
+                  <img src={thinking} className="img" />
                 </div>
               )}
             </InView>

@@ -9,9 +9,10 @@ import { Link } from "gatsby"
 const Team = () => {
   return (
     <section className="content-team" id="team-section">
-      <Title titleA={"Conece al"} titleB={" equipo"} />
+      <Title titleA={"Conoce al"} titleB={" equipo"} />
       <CircleGreen />
       <div className="team__cardSection">
+        
         {team_members.slice(0, 3).map(member => {
           return (
             <div className="scene">
@@ -27,7 +28,7 @@ const Team = () => {
         })}
       </div>
       <Link to="/AllTeam">
-        <Button text="Conocenos" logo={true} />
+        <Button text="Conócenos" logo={true} />
       </Link>
     </section>
   )

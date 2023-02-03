@@ -15,7 +15,7 @@
 
 .card {
   width: 291px;
-  height: 341px;
+  height: 301px;
   background-color: #fbfcff;
   box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
   transition: 0.5s ease-in-out;
@@ -40,8 +40,29 @@
 }
 
 .card__face--back {
-  background: blue;
+  background: white;
   transform: rotateY( 180deg );
+  text-align: left;
+  
+
+}
+
+.title__card{
+  font-family: 'Montserrat';
+  color:#050739;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.card__logos{
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .card:hover {
@@ -64,14 +85,7 @@
   top: -25px;
 }
 
-.team__card:hover {
-  animation: loader 2s;
-  background-color: black;
-}
 
-.team__card:hover > img {
-  display: none;
-}
 
 .team__cardSection {
   display: grid;
@@ -80,7 +94,7 @@
   padding-right: 260px;
   justify-content: center;
   margin-top: -30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   gap: 5px;
 }
 
@@ -89,6 +103,15 @@
   position: relative;
   top: -20px;
   padding-left: 14px;
+}
+
+.team__card__text_back{
+  text-align: left;
+  position: relative;
+  top: -20px;
+  padding-left: 14px;
+  margin-left: 20px;
+  margin-top: 40px;
 }
 
 @keyframes loader {

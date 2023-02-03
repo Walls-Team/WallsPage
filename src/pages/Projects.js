@@ -15,7 +15,7 @@ import {
 } from "../assets/logosTec"
 import ProjectCard from "../components/projectCard"
 import { ProjectsData } from "../mockData"
-
+import Marquee from "react-fast-marquee";
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 
@@ -33,8 +33,9 @@ const TecnologiesWrapper = () => {
 export default function Projects() {
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
+    520: { items: 2 },
+    785: { items: 3 },
+    1024: { items: 4 },
   }
   return (
     <div className="content-projects" id="skills-section">
@@ -42,7 +43,7 @@ export default function Projects() {
         <TecnologiesWrapper />
         <ArrowLeft />
         <article className="projects__section_logos">
-          <marquee>
+          <Marquee speed={100}>
             <Python />
            
             <Django />
@@ -55,7 +56,7 @@ export default function Projects() {
             <Css3 />
             <Figma />
             <Untitled />
-          </marquee>
+          </Marquee>
           {/* <AliceCarousel
             autoPlay
             autoPlayInterval={1000}

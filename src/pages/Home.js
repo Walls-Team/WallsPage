@@ -37,9 +37,12 @@ export default function Home() {
   return (
     <>
       <div className="content-home" id="home-section">
-       
-        <h1>WWWWWWWWWWWWWWWWWWWWW</h1>
-        <Logo />
+        <Navbar setShow={false} />
+
+        <div className="home__section_one">
+          <h1>WWWWWWWWWWWWWWWWWWWWW</h1>
+          <Logo />
+        </div>
 
         {/* <div className="containerTitle">
         <h1 className="title">Welcome</h1>

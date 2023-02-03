@@ -5,7 +5,7 @@ import "reactjs-popup/dist/index.css"
 const Article = styled.article`
   width: 325px !important;
   height: 250px;
-  background-image: url(${props => props.img});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.img});
   background-size: auto;
   color: white;
   font-family: "Monserrat";
@@ -14,7 +14,13 @@ const Article = styled.article`
   align-items: center;
   background-color: black;
   z-index: 10;
-  opacity: 0.5;
+  
+
+
+  &:hover{
+    background-image: url(${props => props.img});
+    color: transparent;
+  }
 `
 
 const ProjectCard = ({ name, image }) => {

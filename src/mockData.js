@@ -6,12 +6,12 @@ import user4 from './assets/user4.png'
 import user5 from './assets/user5.png'
 import user6 from './assets/user6.png'
 import React from 'react';
-
+import pc from './assets/pc.png'
 export const ProjectsData=[
     {
         id:1,
         title:'Scoby Social',
-        url:'https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&w=800'
+        url:pc
     },
     {
         id:2,
