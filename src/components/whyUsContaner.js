@@ -234,12 +234,14 @@ const WhyUsContainer = () => {
             </div>
           </div> */}
 
+        <div>
         <TimeLine
           one={count === 1 ? true : false}
           two={count === 2 ? true : false}
           three={count === 3 ? true : false}
           className="timeline"
         />
+        </div>
       </div>
     </article>
   )

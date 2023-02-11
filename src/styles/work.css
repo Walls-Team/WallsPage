@@ -1,28 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 .content-work {
- 
   background: white;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   overflow-x: hidden;
   /* padding-top: 2%; */
-  /* padding-bottom: 5%; */ 
+  /* padding-bottom: 5%; */
   width: 100%;
   height: 100vh;
 }
 
-
 .wrapper {
   width: 100%;
- 
 }
 
 .whyUs_container {
-  background-color: #FBFCFF;
+  background-color: #fbfcff;
   width: 80%;
   height: 85%;
   border-radius: 34px;
@@ -30,81 +27,74 @@
   z-index: 10;
   margin-top: -40px;
   overflow: hidden;
-  font-family: 'Montserrat' !important;
+  font-family: "Montserrat" !important;
 }
 
-.container__description{
-  font-family: 'Montserrat' !important;
-
+.container__description {
+  font-family: "Montserrat" !important;
 }
 
-.container__list li{
-  font-family: 'Montserrat' !important;
- 
+.container__list li {
+  font-family: "Montserrat" !important;
 }
 
-.container__list li span{
-  font-family: 'Montserrat' !important;
+.container__list li span {
+  font-family: "Montserrat" !important;
   margin-left: 20px;
 }
 
-.container__section_one{
+.container__section_one {
   display: flex;
   /* padding-top: 50px; */
   padding-left: 55px;
   padding-right: 60px;
-  font-family: 'Montserrat' !important;
-
+  font-family: "Montserrat" !important;
 }
-.container__section_two{
+.container__section_two {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: -90px;
 }
-.container__section_one div p{
-  font-family: 'Monserrat';
+.container__section_one div p {
+  font-family: "Monserrat";
   color: #051367;
   font-weight: 400;
   font-size: 22px;
 }
-.container__list{
+.container__list {
   display: flex;
   gap: 45px;
 }
 
-.container__list li{
+.container__list li {
   display: flex;
   flex-direction: row;
   margin-bottom: 45px;
-  font-family: 'Monserrat';
-  
+  font-family: "Monserrat";
 }
 
-.carousel{
- 
-  overflow-x:scroll;
+.carousel {
+  overflow-x: scroll;
   display: flex;
   flex-direction: row;
   justify-items: flex-start;
   margin-left: 30px;
+
 }
 
-
-
-.title__wrapper{
+.title__wrapper {
   position: relative;
   top: -30px;
 }
-.img{
+.img {
   width: 100%;
   height: 100%;
 }
 
 @media only screen and (max-width: 1164px) {
-  .whyUs_container{
+  .whyUs_container {
     width: 100%;
-    
   }
 
   /* .container__section_one{
@@ -117,15 +107,63 @@
     background-color: blue;
   } */
 
+  .carousel {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  .whyUs_container {
+    width: 100%;
+  }
+  .container__section_one {
+    margin-bottom: 50px;
+  }
+  .container__section_two {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
   .timeline{
-    
+    position: relative;
+    left: -100px !important;
+  }
+}
+
+@media only screen and (max-width: 887px) {
+  .container__list {
+    display: none;
+  }
+  .container__section_one {
+    margin-bottom: 15%;
+  }
+  .timeline{
+    position: relative;
+    left: -50px !important;
+  }
+  
+}
+
+@media only screen and (max-width: 803px) {
+  .timeline{
+    display: none;
   }
 
   .carousel{
-    
-   
-    width: 40%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -10px;
   }
 
+
 }
+
+
+
+@media only screen and (max-width: 566px) {
+  .title__wrapper{
+    margin-top: 20px;
+  }
+}
+
 
