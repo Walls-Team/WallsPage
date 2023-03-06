@@ -1,8 +1,17 @@
 @import "./header.css";
 @import "./home.css";
-@import "./skills.css";
+@import "./projects.css";
 @import "./work.css";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "./team.css";
+@import "./navbar.css";
+@import "./testimonial.css";
+@import "./textSection.css";
+@import "./ubication.css";
+@import "./sidebar.css";
+@import "./allteam.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue+Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 
 html {
   -ms-text-size-adjust: 100%;
@@ -16,6 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
+  overflow-x: hidden;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -24,5 +34,80 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-family: "Bebas Neue", cursive;
-  background: linear-gradient(to right, rgb(30, 212, 212), rgb(247, 187, 151));
+  background: linear-gradient(
+    180deg,
+    rgb(0, 4, 249) 0%,
+    rgba(93, 139, 244, 0) 85%
+  );
 }
+
+.web_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 67px;
+  color: #051367;
+  margin: 0 auto;
+  margin-bottom: 40px; 
+  z-index: 20;
+}
+
+.web_title span{
+  color: #2D31FA;
+}
+
+.button{
+  background-color: #051367;
+  width: 237px;
+  height: 59px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.Link{
+  text-decoration: none;
+}
+
+.backBtn{
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
+
+.scene{
+  width: auto;
+  height: auto;
+  perspective: 600px;
+}
+
+
+@media only screen and (max-width: 1164px) {
+
+  /* .content-projects,.content-team ,.content-testimonial,.content-text,.content-ubication,.content-work{
+    
+    height: auto;
+
+  } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

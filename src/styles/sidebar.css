@@ -1,0 +1,29 @@
+.sidebar {
+    background-color: #ffffff;
+    position: absolute;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    z-index: 5;
+  }
+  
+  .sidebar__icon {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar__icon:hover {
+    background-color: lightgray;
+  }
+  
+  .sidebar__link {
+    color: black;
+    font-family: 'Monserrat';
+  }

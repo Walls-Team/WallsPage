@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect,useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -9,9 +9,16 @@ import Scrolldown from "../images/scroll-down.json"
 import Header from "../components/header"
 import "../styles/index.css"
 import Home from "./Home"
-import Skills from "./Skills"
-import Work from "./Work"
+import Projects from "./Projects"
+import Work from "./WhyUs"
+import Team from './Team'
 import { animateScroll as scroll, Events } from "react-scroll"
+import Navbar from "../components/navbar"
+import Testimonials from "./Testimonials"
+import TextSection from "./TextSection"
+import Ubication from "./Ubication"
+import SideBar from "../components/sideBar";
+
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -24,7 +31,12 @@ const defaultOptions = {
 let moving = false
 let isDown = 0
 let timerScroll = null
+
 const IndexPage = () => {
+  const [show, setShow] = useState(false);
+
+
+
   useEffect(() => {
     Events.scrollEvent.register("begin", function (to, element) {
       moving = true
@@ -57,10 +69,15 @@ const IndexPage = () => {
   }, [])
   return (
     <Layout>
+      <SideBar show={show} setShow={setShow}/>
       <Header />
       <Home />
-      <Skills />
+      <Projects />
       <Work />
+      <Team/>
+      <Testimonials/>
+      <TextSection/>
+      <Ubication/>
     </Layout>
   )
 }

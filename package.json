@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "luis paredes luisparedez@gmail.com",
   "dependencies": {
+    "framer-motion": "6.2.4",
     "gatsby": "^3.11.1",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
     "gatsby-plugin-image": "^1.11.0",
@@ -16,15 +17,23 @@
     "gatsby-transformer-sharp": "^3.11.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-alice-carousel": "^2.7.0",
     "react-dom": "^17.0.1",
+    "react-fast-marquee": "^1.3.5",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.1",
     "react-lottie": "^1.2.3",
+    "react-render-counter": "^1.0.1",
     "react-scroll": "^1.8.4",
+    "react-spring": "^9.6.1",
+    "reactjs-popup": "^2.0.5",
+    "styled-components": "^5.3.6",
     "tsparticles": "^1.34.0"
   },
   "engines": {
-    "node": "14.17.4",
-    "npm": "6.14.14"
+    "node": "19.2.0",
+    "npm": "8.19.3"
   },
   "devDependencies": {
     "prettier": "2.3.2"

@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.content-team {
+  height: 100vh;
+  background: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 5%; */
+  width: 100%;
+
+}
+
+.card {
+  width: 291px;
+  height: 301px;
+  background-color: #fbfcff;
+  box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+  /* width: 100%;
+  height: 100%; */
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  
+  
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card__face--front {
+  /* background: red; */
+}
+
+.card__face--back {
+  background: white;
+  transform: rotateY( 180deg );
+  text-align: left;
+  
+
+}
+
+.title__card{
+  font-family: 'Montserrat';
+  color:#050739;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.card__logos{
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.role {
+  color: #ee4d4d;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.name {
+  color: #2d31fa;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Montserrat";
+  position: relative;
+  top: -25px;
+}
+
+
+
+.team__cardSection {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 260px;
+  padding-right: 260px;
+  justify-content: center;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.team__card_text{
+  text-align: left;
+  position: relative;
+  top: -20px;
+  padding-left: 14px;
+}
+
+.team__card__text_back{
+  text-align: left;
+  position: relative;
+  top: -20px;
+  padding-left: 14px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: y 90deg;
+    /* scale: 0.5; */
+  }
+  /* 50% {
+    rotate: 180deg;
+  } */
+  /* 75% {
+    rotate: x 270deg;
+    border-radius: 50%;
+  } */
+  /* 100% {
+    rotate: 360deg;
+  } */
+}
+
+
+.content-member{
+  background-color: white;
+  height: 100%;
+
+}
+
+.content-member section{
+  padding-left: 248px;
+  padding-right: 107px;
+}
+
+.member__header{
+  background: linear-gradient(180deg, #BBC9FF 0%, rgba(234, 238, 255, 0) 100%);
+  width: 100%;
+  padding-left: 72px;
+  padding-top: 70px;
+}
+
+.member__section{
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+}
+
+.member__text h1{
+  color: #2d31fa;
+  font-family: 'Montserrat';
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.member__text{
+  display: flex;
+  align-items: center;
+}
+
+.member__text p{
+  color: #050739;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  top: -20px;
+}
+
+.stripe{
+  background-color: #FF4300;
+  width: 10px;
+  height: 111px;
+}
+
+.about__member{
+ display: flex;
+ justify-content: center;
+ gap: 5%;
+ padding-top: 10%;
+}
+
+
+.member__bio{
+  width: 35%;
+
+  font-family: 'Monserrat';
+  color: #050739;
+}
+
+.skills__wrapper{
+  background-color: white;
+  width: 523px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
+  padding-left: 37px;
+  font-family: 'Montserrat';
+  font-style: 'normal';
+}
+
+.skills{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.wrap__title_logo{
+  display: flex;
+  flex-direction: flex-start;
+}
+
+.social__media h3{
+  font-family: 'Montserrat';
+  font-family: '700';
+  font-size: 32px;
+}
+.projects__section h3{
+  font-family: 'Montserrat';
+  font-family: '700';
+  font-size: 32px;
+}
+
+.social__media div{
+  display: flex;
+}
+
+.social__media ul{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  color: #6A6A6A;
+  list-style: none;
+  
+  
+}
+
+.social__media ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+ 
+}
+
+.social__media ul li span{
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 902px) {
+  
+  .about__member{
+    flex-direction: column;
+   
+  }
+
+  .member__bio{
+    width: 100%;
+  }
+
+  .skills__wrapper{
+    width: 100%;
+  }
+
+  .projects__section{
+    text-align: center;
+  }
+
+  .projects__section_projects{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+  }
+
+  .team__cardSection{
+  
+    grid-template-columns:  auto auto;
+    overflow: scroll;
+  }
+
+  .content-member section{
+    padding: 0;
+  }
+
+
+ 
+
+}
+
+@media only screen and (max-width: 902px) {
+  .team__cardSection{
+    grid-template-columns:  auto;
+
+  }
+
+}
+
+@media only screen and (max-width: 779px) {
+  .social__media div{
+    flex-direction: column;
+  }  
+}
