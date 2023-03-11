@@ -5,7 +5,8 @@ import { Python, ReactLogo } from "../assets/logosTec"
 
 const Card = ({ img, name, role, id }) => {
   return (
-    <div className="card Link" to={`/TeamMember/${id}`}>
+    <Link to={`/TeamMember/${id}`}>
+    <div className="card Link" >
       <div className="card__face card__face--front">
         <img src={img} />
 
@@ -33,6 +34,7 @@ const Card = ({ img, name, role, id }) => {
         </div>
       </div>
     </div>
+    </Link>
   )
 }
 

@@ -40,7 +40,7 @@ export default function Home() {
         <Navbar setShow={false} />
 
         <div className="home__section_one">
-          <h1>WWWWWWWWWWWWWWWWWWWWW</h1>
+          <h1 className="h1">WWWWWWWWWWWWWWWWWWWWW</h1>
           <Logo />
         </div>
 

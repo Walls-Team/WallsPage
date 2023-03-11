@@ -305,6 +305,19 @@
 
   }
 
+  .member__section{
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 912px) {
+  
+  .member__section{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (max-width: 779px) {

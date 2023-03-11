@@ -8,7 +8,9 @@ import { Logo } from "../assets/iconsSvg"
 const Navbar = ({ setShow }) => {
   return (
     <nav className="navBar">
-      <Logo />
+        <div className='logoNav'>
+        <Logo />
+        </div>
 
       <ul className="navBar_links">
         <li>Home</li>

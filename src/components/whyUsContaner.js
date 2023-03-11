@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState,useRef } from "react"
 import {
   Multidisciplinaria,
   Software,
@@ -11,24 +11,19 @@ import {
 import rocket from "../assets/rocket.png"
 import thinking from "../assets/thinking.png"
 import worktogether from "../assets/worktogether.png"
-import {
-  motion,
-  useMotionValue,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion"
+
 import { InView } from "react-intersection-observer"
 import { useTransition, animated } from "react-spring"
-import { withRenderCount, RenderCounter } from "react-render-counter"
 
 let arr = []
 
 const IMAGE = ({ view, setCount, setDirection, direction }) => {
   let images = [rocket, worktogether, thinking]
+  const mounted = useRef(false)
 
   useEffect(() => {
     arr.push(1)
-    // count+=1
+    mounted.current = true
     if (arr.length === 4) {
       arr = []
       if (direction === "up") {
@@ -37,13 +32,20 @@ const IMAGE = ({ view, setCount, setDirection, direction }) => {
         setDirection("up")
       }
     }
-
     setCount(arr.length)
+
+
+
+    return function cleanup() {
+      setCount(0)
+    };
+
   }, [])
+
+  
 
   return (
     <>
-      {console.log(arr.length - 1)}
       <img src={images[arr.length - 1]} className="img" />
     </>
   )
@@ -70,7 +72,7 @@ const WhyUsContainer = () => {
   })
 
   useEffect(() => {
-    const t = setInterval(() => setDate(prev => (prev = !prev)), 2000)
+    const t = setInterval(() => setDate(prev => (prev = !prev)), 1000)
 
     if (count > 8) {
       setDirection(prev => (prev === "up" ? "down" : "up"))
@@ -126,10 +128,11 @@ const WhyUsContainer = () => {
                 item ? (
                   <animated.div style={style} className="item">
                     <InView>
+
                       {({ inView, ref, entry, leave }) => (
                         <div ref={ref}>
                           <IMAGE
-                            view={inView}
+                            view={leave}
                             setCount={setCount}
                             setDirection={setDirection}
                             direction={direction}
