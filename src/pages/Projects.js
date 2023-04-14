@@ -25,7 +25,7 @@ const TecnologiesWrapper = () => {
   return (
     <div className="tec_wrapper">
       <h1>20+</h1>
-      <p>Tecnologías usadas</p>
+      <p>Tecnologías usadas </p>
     </div>
   )
 }
@@ -57,24 +57,7 @@ export default function Projects() {
             <Figma />
             <Untitled />
           </Marquee>
-          {/* <AliceCarousel
-            autoPlay
-            autoPlayInterval={1000}
-            infinite
-            responsive={responsive}
-            mouseTracking
-            disableDotsControls
-            disableButtonsControls
-            items={[
-              <Python />,
-              <Django />,
-              <ReactLogo />,
-              <Vuejs />,
-              <Angular />,
-              <Photoshop />,
-              <Wordpress />,
-              <Java />,
-            ]} */}
+          
          
         </article>
       </section>

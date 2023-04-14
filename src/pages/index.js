@@ -70,7 +70,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SideBar show={show} setShow={setShow}/>
-      <Header />
+      <Header />   
       <Home />
       <Projects />
       <Work />
