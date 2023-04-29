@@ -1,5 +1,4 @@
-import React from "react"
-import Lottie from "react-lottie"
+import React, {useState} from "react"
 import Navbar from "../components/navbar"
 import Dev from "../images/dev.json"
 
@@ -33,41 +32,16 @@ const Logo = () => {
   )
 }
 
-export default function Home() {
+export default function Home({show,setShow}) {
   return (
     <>
       <div className="content-home" id="home-section">
-        <Navbar setShow={false} />
+        <Navbar setShow={setShow} show={show}/>
 
         <div className="home__section_one">
           <h1 className="h1">WWWWWWWWWWWWWWWWWWWWW</h1>
           <Logo />
         </div>
-
-        {/* <div className="containerTitle">
-        <h1 className="title">Welcome</h1>
-        <div className="Iam">
-          <p>We are</p>
-          <b>
-            <div className="innerIam">
-              Developers
-              <br />
-              Walls Team
-              <br />
-              Your best option
-              <br />
-              Quick, efficient and effective.
-              <br />
-              Top Rate Upwork
-              <br />
-              <br />
-              Leonel the bear
-              <br />
-              your best choice
-            </div>
-          </b>
-        </div>
-      </div> */}
       </div>
     </>
   )

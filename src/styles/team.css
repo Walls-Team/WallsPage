@@ -20,13 +20,9 @@
   box-shadow: 2px 3px 5px rgba(114, 113, 113, 0.18);
   transition: 0.5s ease-in-out;
   z-index: 10;
-  /* width: 100%;
-  height: 100%; */
-  position: relative;
+  /* height: 100%; */ 
   transition: transform 1s;
   transform-style: preserve-3d;
-  
-  
 }
 
 .card__face {
@@ -195,7 +191,7 @@
 
 
 .member__bio{
-  width: 35%;
+  width: 45%;
 
   font-family: 'Monserrat';
   color: #050739;
@@ -259,7 +255,8 @@
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 902px) {
+
+@media only screen and (max-width: 1000px) {
   
   .about__member{
     flex-direction: column;
@@ -325,3 +322,10 @@
     flex-direction: column;
   }  
 }
+
+@media only screen and (max-width: 514px) {
+  .team__cardSection{
+    padding: 0;
+  }  
+}
+
