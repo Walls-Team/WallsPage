@@ -1,3 +1,4 @@
+import { navigate } from "gatsby"
 import React from "react"
 import { IconWall, Logo, Stripes, StripesTwo } from "../assets/iconsSvg"
 import BackButton from "../components/backButton"
@@ -12,7 +13,7 @@ const AllTeam = () => {
     <div className="content-allteam">
       <BackButton/>
       <div className="wrap__title">
-        <div className="wrap__title_logo">
+        <div className="wrap__title_logo" onClick={()=>navigate('/')}>
           <Logo/>
         </div>
         <Title titleA={"Conoce al"} titleB={" equipo"} />
@@ -20,8 +21,8 @@ const AllTeam = () => {
       <div className="gradient"></div>
       <Stripes />
       <div className="team__cardSection">
-        {team_members.map(team => {
-          return <Card img={team.img} role={team.role} name={team.name} />
+        {team_members.map((team,i )=> {
+          return <Card img={team.img} id={team.id} role={team.role} name={team.name} key={i}/>
         })}
       </div>
       <StripesTwo />

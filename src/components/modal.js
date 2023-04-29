@@ -1,8 +1,8 @@
 import React from "react"
 import Popup from "reactjs-popup"
-import 'reactjs-popup/dist/index.css';
+import "reactjs-popup/dist/index.css"
 
-const Modal = ({ visible, setVisible }) => {
+const Modal = () => {
   return (
     <Popup modal trigger={<button> Trigger</button>} position="right center">
       <div>Popup content here !!</div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useRef } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import {
   Multidisciplinaria,
   Software,
@@ -17,7 +17,7 @@ import { useTransition, animated } from "react-spring"
 
 let arr = []
 
-const IMAGE = ({ view, setCount, setDirection, direction }) => {
+const IMAGE = ({ setCount, setDirection, direction }) => {
   let images = [rocket, worktogether, thinking]
   const mounted = useRef(false)
 
@@ -34,15 +34,10 @@ const IMAGE = ({ view, setCount, setDirection, direction }) => {
     }
     setCount(arr.length)
 
-
-
     return function cleanup() {
       setCount(0)
-    };
-
+    }
   }, [])
-
-  
 
   return (
     <>
@@ -128,7 +123,6 @@ const WhyUsContainer = () => {
                 item ? (
                   <animated.div style={style} className="item">
                     <InView>
-
                       {({ inView, ref, entry, leave }) => (
                         <div ref={ref}>
                           <IMAGE
@@ -173,77 +167,13 @@ const WhyUsContainer = () => {
           )}
         </div>
 
-        {/* <div ref={ref}>
-            {setOne(inView)}
-            <img src={rocket} className="img" />
-          </div> */}
-        {/*            animate={{ y: [0, -600, -1000], repeatCount: 10 }}
-            transition={{
-              delay: 1,
-              repeatDelay: 2,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-          >
-            <InView>
-              {({ inView, ref, entry }) => (
-                <div ref={ref}>
-                  {setOne(inView)}
-                  <img src={rocket} className="img" />
-                </div>
-              )}
-            </InView>
-            <InView>
-              {({ inView, ref, entry }) => (
-                <div ref={ref}>
-                  {setTwo(inView)}
-                  <img src={worktogether} className="img" />
-                </div>
-              )}
-            </InView>
-
-            <InView>
-              {({ inView, ref, entry }) => (
-                <div ref={ref}>
-                  {setThree(inView)}
-
-                  <img src={thinking} className="img" />
-                </div>
-              )}
-            </InView> */}
-
-        {/* <motion.div className="element"  animate={{y:-600,repeatCount:10}} transition={{ delay: 1,repeat: Infinity,repeatType: "reverse" }}>
-            <img src={rocket} />
-          </motion.div>
-          
-          <motion.div className="element" animate={{y:[0,-550,-1000,0],repeatCount:10}} transition={{delay:2,repeat: Infinity,repeatType: "reverse"}}>
-          <img src={worktogether} />
-          </motion.div>
-         
-          <motion.div className="element" animate={{y:[0,-550,-1000,0]}} transition={{ delay: 3,repeat: Infinity ,repeatType: "reverse"}}>
-          <img src={thinking} />
-          </motion.div> */}
-        {/* <div className="change_outer">
-            <div className="change_inner">
-              <div className="element">
-                <img src={rocket} />
-              </div>
-              <div className="element">
-                <img src={worktogether} />
-              </div>
-              <div className="element">
-                <img src={thinking} />
-              </div>
-            </div>
-          </div> */}
-
         <div>
-        <TimeLine
-          one={count === 1 ? true : false}
-          two={count === 2 ? true : false}
-          three={count === 3 ? true : false}
-          className="timeline"
-        />
+          <TimeLine
+            one={count === 1 ? true : false}
+            two={count === 2 ? true : false}
+            three={count === 3 ? true : false}
+            className="timeline"
+          />
         </div>
       </div>
     </article>
