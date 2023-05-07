@@ -26,10 +26,13 @@
 .navbar {
   display: none;
 }
-
+.aux{
+  display: none;
+}
 @media only screen and (max-width: 967px) {
   .navbar {
     display: flex;
+    left: 100px;
   }
 
   .navBar_links {
@@ -42,17 +45,57 @@
 }
 
 @media only screen and (max-width: 579px) {
-  .logoNav {
-    display: none;
+  .navbar {
+    display: flex;
+    left: 100px;
   }
 
   .navBar {
-    flex-direction: column;
-    justify-items: center;
+    flex-direction: row;
+    justify-items: space-between;
+    padding: none !important;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .navbar {
+    display: flex;
+    margin-right: -80px;
+  }
+  .navBar {
+    justify-items: space-between !important;
+  }
+  .logoNav {
+    margin-left: -80px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logoNav {
+    display: flex;
+    justify-self: flex-start;
+    width: 100%;
   }
   .navbar {
     display: flex;
-    align-self: flex-end;
-    margin-top: 40px;
+    justify-self: flex-end;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 288px) {
+  .logoNav {
+    display: none;
+  }
+  .aux{
+    display: flex;
   }
 }

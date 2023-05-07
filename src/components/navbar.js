@@ -9,6 +9,8 @@ const Navbar = ({ setShow }) => {
       <div className="logoNav">
         <Logo />
       </div>
+      <div className="aux">
+      </div>
 
       <ul className="navBar_links">
         <li>Home</li>

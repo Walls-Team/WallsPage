@@ -78,8 +78,8 @@ const WhyUsContainer = () => {
   return (
     <article className="whyUs_container">
       <div className="container__section_one">
-        <div>
-          <p className="container__description">
+        <div className="container__description">
+          <p className="description">
             Somos una agencia multidisciplinaria conformada por los mejores
             profesionales de Venezuela, creamos software de clase mundial,
             trabajamos con diversas tecnologías.
