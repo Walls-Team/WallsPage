@@ -12,7 +12,10 @@ import {
 } from "../../assets/iconsSvg"
 import BackButton from "../../components/backButton"
 import ProjectCard from "../../components/projectCard"
-import { ProjectsData, team_members } from "../../mockData"
+import { ProjectsData } from "../../data/projectsData"
+import { team_members } from "../../data/usersData"
+import { getSkill } from "../../helpers"
+//import { ProjectsData, team_members } from "../../mockData"
 import Ubication from "../Ubication"
 
 const TeamMember = props => {
@@ -34,7 +37,7 @@ const TeamMember = props => {
     let projectAux = []
     if (member.id !== undefined) {
       member.projects.map(item => {
-        let aux = projects.filter(project => item === project.id)
+        let aux = ProjectsData.filter(project => item === project.id)
         if (aux.length > 0) {
           projectAux.push(aux[0])
         }
@@ -72,7 +75,7 @@ const TeamMember = props => {
           <ul className="skills">
             {member.skills !== undefined &&
               member.skills.map((item,i) => {
-                return <li key={i}>{item}</li>
+                return <li key={i}>{getSkill(item)}</li>
               })}
           </ul>
           <h3>Softskills</h3>
@@ -102,7 +105,7 @@ const TeamMember = props => {
           mouseTracking
           disableDotsControls
           disableButtonsControls
-          items={ProjectsData.map(item => {
+          items={projects.map(item => {
             return <ProjectCard name={item.title} image={item.url} />
           })}
         />

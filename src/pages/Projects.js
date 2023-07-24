@@ -14,10 +14,11 @@ import {
   Untitled,
 } from "../assets/logosTec"
 import ProjectCard from "../components/projectCard"
-import { ProjectsData } from "../mockData"
+//import { ProjectsData } from "../mockData"
 import Marquee from "react-fast-marquee"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
+import { ProjectsData } from "../data/projectsData"
 
 const TecnologiesWrapper = () => {
   return (

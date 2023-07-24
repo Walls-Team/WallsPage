@@ -3,8 +3,8 @@ import { CircleGreen } from "../assets/iconsSvg"
 import Button from "../components/button"
 import Card from "../components/cardTeam"
 import Title from "../components/title"
-import { team_members } from "../mockData"
 import { Link } from "gatsby"
+import { team_members } from "../data/usersData"
 
 const Team = () => {
   return (
@@ -20,6 +20,7 @@ const Team = () => {
                 name={member.name}
                 img={member.img}
                 role={member.role}
+                skills={member.skills}
               />
             </div>
           )

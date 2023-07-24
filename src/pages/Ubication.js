@@ -1,15 +1,15 @@
 import React from 'react';
-import map from '../assets/map.png'
+//import map from '../assets/map.png'
 import Button from '../components/button';
 
 const Ubication = () => {
     return ( 
         <section className='content-map' id='location-section'>
             <article className='map__image'>
-                <img
+                {/* <img
                 className='img'
                     src={map}
-                />
+                /> */}
             </article>
             <article className='map__form'>
               

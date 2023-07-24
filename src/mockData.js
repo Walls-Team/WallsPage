@@ -13,17 +13,15 @@ import {
 import user1 from "./assets/user1.png"
 import user2 from "./assets/user2.png"
 import user3 from "./assets/user3.png"
-import user4 from "./assets/user4.png"
 import user5 from "./assets/user5.png"
 import user6 from "./assets/user6.png"
 import React from "react"
-import pc from "./assets/pc.png"
 
 export const ProjectsData = [
   {
     id: 1,
     title: "Scoby Social",
-    url: pc,
+    url: '',
   },
   {
     id: 2,
