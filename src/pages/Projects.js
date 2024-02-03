@@ -14,18 +14,17 @@ import {
   Untitled,
 } from "../assets/logosTec"
 import ProjectCard from "../components/projectCard"
-import { ProjectsData } from "../mockData"
-import Marquee from "react-fast-marquee";
+//import { ProjectsData } from "../mockData"
+import Marquee from "react-fast-marquee"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
-
-const handleDragStart = e => e.preventDefault()
+import { ProjectsData } from "../data/projectsData"
 
 const TecnologiesWrapper = () => {
   return (
     <div className="tec_wrapper">
       <h1>20+</h1>
-      <p>Tecnologías usadas</p>
+      <p>Tecnologías usadas </p>
     </div>
   )
 }
@@ -45,7 +44,7 @@ export default function Projects() {
         <article className="projects__section_logos">
           <Marquee speed={100}>
             <Python />
-           
+
             <Django />
             <ReactLogo />
             <Vuejs />
@@ -57,25 +56,6 @@ export default function Projects() {
             <Figma />
             <Untitled />
           </Marquee>
-          {/* <AliceCarousel
-            autoPlay
-            autoPlayInterval={1000}
-            infinite
-            responsive={responsive}
-            mouseTracking
-            disableDotsControls
-            disableButtonsControls
-            items={[
-              <Python />,
-              <Django />,
-              <ReactLogo />,
-              <Vuejs />,
-              <Angular />,
-              <Photoshop />,
-              <Wordpress />,
-              <Java />,
-            ]} */}
-         
         </article>
       </section>
       <section className="projects__section-two">

@@ -10,12 +10,13 @@ const Testimonials = () => {
       <Title titleA={"Que dicen"} titleB=" nuestros clientes" />
       <StripesTwo/>
       <div className="card__grid">
-        {testimonial.map(item => {
+        {testimonial.map((item,i) => {
           return (
             <CardTestimonial
               img={item.img}
               description={item.comment}
               client={item.client}
+              key={i}
             />
           )
         })}

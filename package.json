@@ -10,8 +10,8 @@
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-manifest": "^3.11.0",
-    "gatsby-plugin-offline": "^4.11.0",
     "gatsby-plugin-react-helmet": "^4.11.0",
+    "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-source-filesystem": "^3.11.0",
     "gatsby-transformer-sharp": "^3.11.0",
@@ -29,7 +29,8 @@
     "react-spring": "^9.6.1",
     "reactjs-popup": "^2.0.5",
     "styled-components": "^5.3.6",
-    "tsparticles": "^1.34.0"
+    "tsparticles": "^1.34.0",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   },
   "engines": {
     "node": "19.2.0",

@@ -1,5 +1,4 @@
-import React from "react"
-import Lottie from "react-lottie"
+import React, {useState} from "react"
 import Navbar from "../components/navbar"
 import Dev from "../images/dev.json"
 
@@ -20,6 +19,7 @@ const Logo = () => {
       viewBox="0 0 534 432"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="logo"
     >
       <path
         d="M350.373 218.066C350.007 219.487 349.814 220.977 349.814 222.508C349.814 232.414 357.843 240.443 367.749 240.443C373.268 240.443 378.207 237.946 381.497 234.021L350.373 218.066Z"
@@ -33,41 +33,16 @@ const Logo = () => {
   )
 }
 
-export default function Home() {
+export default function Home({show,setShow}) {
   return (
     <>
       <div className="content-home" id="home-section">
-        <Navbar setShow={false} />
+        <Navbar setShow={setShow} show={show}/>
 
         <div className="home__section_one">
-          <h1>WWWWWWWWWWWWWWWWWWWWW</h1>
+          <h1 className="h1">WWWWWWWWWWWWWWWWWWWWW</h1>
           <Logo />
         </div>
-
-        {/* <div className="containerTitle">
-        <h1 className="title">Welcome</h1>
-        <div className="Iam">
-          <p>We are</p>
-          <b>
-            <div className="innerIam">
-              Developers
-              <br />
-              Walls Team
-              <br />
-              Your best option
-              <br />
-              Quick, efficient and effective.
-              <br />
-              Top Rate Upwork
-              <br />
-              <br />
-              Leonel the bear
-              <br />
-              your best choice
-            </div>
-          </b>
-        </div>
-      </div> */}
       </div>
     </>
   )

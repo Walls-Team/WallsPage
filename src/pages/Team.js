@@ -3,8 +3,8 @@ import { CircleGreen } from "../assets/iconsSvg"
 import Button from "../components/button"
 import Card from "../components/cardTeam"
 import Title from "../components/title"
-import { team_members } from "../mockData"
 import { Link } from "gatsby"
+import { team_members } from "../data/usersData"
 
 const Team = () => {
   return (
@@ -12,16 +12,15 @@ const Team = () => {
       <Title titleA={"Conoce al"} titleB={" equipo"} />
       <CircleGreen />
       <div className="team__cardSection">
-        
-        {team_members.slice(0, 3).map(member => {
+        {team_members.slice(0, 3).map((member, i) => {
           return (
-            <div className="scene">
+            <div className="scene" key={i}>
               <Card
-                key={member.id}
                 id={member.id}
                 name={member.name}
                 img={member.img}
                 role={member.role}
+                skills={member.skills}
               />
             </div>
           )
